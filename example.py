@@ -1,53 +1,59 @@
-def generate_matrix(size, is_float=False):
-    """Generates an NxN matrix with random values."""
-    matrix = []
-    for i in range(size):
-        row = []
-        for j in range(size):
-            if is_float:
-                value = (i + j + 1) * 0.5  # Simple float generation
-            else:
-                value = (i + j + 1)  # Simple integer generation
-            row.append(value)
-        matrix.append(row)
-    return matrix
+# Input the first number
+x = int(input("Enter the first number: "))
 
-def multiply_matrices(matrix_a, matrix_b):
-    """Performs matrix multiplication of two NxN matrices."""
-    size = len(matrix_a)
-    result = [[0 for _ in range(size)] for _ in range(size)]
+# Input the second number
+y = int(input("Enter the second number: "))
 
-    for i in range(size):
-        for j in range(size):
-            for k in range(size):
-                result[i][j] += matrix_a[i][k] * matrix_b[k][j]
+# Perform addition
+addition = x + y
+print("Addition:")
+print(x, "+", y, "=", addition)
+print()
 
-    return result
+# Perform subtraction (x - y)
+subtraction = x - y
+print("Subtraction:")
+print(x, "-", y, "=", subtraction)
+print()
 
-def print_matrix(matrix):
-    """Prints a matrix in a readable format."""
-    for row in matrix:
-        print("\t".join(f"{val:.2f}" if isinstance(val, float) else f"{val}" for val in row))
-    print()
+# Perform subtraction (y - x)
+reverse_subtraction = y - x
+print("Reverse Subtraction:")
+print(y, "-", x, "=", reverse_subtraction)
+print()
 
-# Input matrix size and type
-N = int(input("Enter the matrix size (e.g., 3, 4, 5): "))
-use_float = input("Use float values? (yes/no): ").strip().lower() == "yes"
+# Perform multiplication
+multiplication = x * y
+print("Multiplication:")
+print(x, "*", y, "=", multiplication)
+print()
 
-# Generate matrices
-matrix_a = generate_matrix(N, is_float=use_float)
-matrix_b = generate_matrix(N, is_float=use_float)
+# Perform division (x / y)
+if y != 0:
+    division = x / y
+    print("Division:")
+    print(x, "/", y, "=", division)
+else:
+    print("Division by zero is not allowed.")
+print()
 
-# Print matrices
-print("Matrix A:")
-print_matrix(matrix_a)
+# Perform division (y / x)
+if x != 0:
+    reverse_division = y / x
+    print("Reverse Division:")
+    print(y, "/", x, "=", reverse_division)
+else:
+    print("Division by zero is not allowed.")
+print()
 
-print("Matrix B:")
-print_matrix(matrix_b)
+# Perform modulus
+if y != 0:
+    modulus = x % y
+    print("Modulus:")
+    print(x, "%", y, "=", modulus)
+else:
+    print("Modulus by zero is not allowed.")
+print()
 
-# Multiply matrices
-result_matrix = multiply_matrices(matrix_a, matrix_b)
-
-# Print result
-print("Result of Matrix Multiplication:")
-print_matrix(result_matrix)
+# Print a conclusion message
+print("All operations completed successfully!")
