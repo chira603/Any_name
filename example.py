@@ -1,59 +1,34 @@
-# Input the first number
-x = int(input("Enter the first number: "))
+# Script to perform basic arithmetic operations
 
-# Input the second number
-y = int(input("Enter the second number: "))
+# Input numbers
+first_number = int(input("Enter the first number: "))
+second_number = int(input("Enter the second number: "))
 
 # Perform addition
-addition = x + y
-print("Addition:")
-print(x, "+", y, "=", addition)
-print()
+addition = first_number + second_number
+print(f"Addition: {first_number} + {second_number} = {addition}")
 
-# Perform subtraction (x - y)
-subtraction = x - y
-print("Subtraction:")
-print(x, "-", y, "=", subtraction)
-print()
-
-# Perform subtraction (y - x)
-reverse_subtraction = y - x
-print("Reverse Subtraction:")
-print(y, "-", x, "=", reverse_subtraction)
-print()
+# Perform subtraction
+subtraction = first_number - second_number
+print(f"Subtraction: {first_number} - {second_number} = {subtraction}")
 
 # Perform multiplication
-multiplication = x * y
-print("Multiplication:")
-print(x, "*", y, "=", multiplication)
-print()
+multiplication = first_number * second_number
+print(f"Multiplication: {first_number} * {second_number} = {multiplication}")
 
-# Perform division (x / y)
-if y != 0:
-    division = x / y
-    print("Division:")
-    print(x, "/", y, "=", division)
+# Perform division
+if second_number != 0:
+    division = first_number / second_number
+    print(f"Division: {first_number} / {second_number} = {division:.2f}")
 else:
-    print("Division by zero is not allowed.")
-print()
-
-# Perform division (y / x)
-if x != 0:
-    reverse_division = y / x
-    print("Reverse Division:")
-    print(y, "/", x, "=", reverse_division)
-else:
-    print("Division by zero is not allowed.")
-print()
+    print("Division: Division by zero is not allowed.")
 
 # Perform modulus
-if y != 0:
-    modulus = x % y
-    print("Modulus:")
-    print(x, "%", y, "=", modulus)
+if second_number != 0:
+    modulus = first_number % second_number
+    print(f"Modulus: {first_number} % {second_number} = {modulus}")
 else:
-    print("Modulus by zero is not allowed.")
-print()
+    print("Modulus: Modulus by zero is not allowed.")
 
-# Print a conclusion message
-print("All operations completed successfully!")
+# End of script
+print("Arithmetic operations completed.")
