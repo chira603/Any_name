@@ -1,4 +1,8 @@
-# Script to perform basic arithmetic operations
+"""
+This script performs basic arithmetic operations (addition, subtraction, multiplication, 
+division, and modulus) between two user-provided numbers. It also handles division 
+and modulus by zero cases gracefully.
+"""
 
 # Input numbers
 first_number = int(input("Enter the first number: "))
