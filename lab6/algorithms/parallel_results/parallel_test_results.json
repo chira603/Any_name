@@ -1,0 +1,58 @@
+{
+  "n=1, threads=1, dist=load": {
+    "repetition_times": [
+      0.08579421043395996,
+      0.026578187942504883,
+      0.02964019775390625
+    ],
+    "failures_per_repetition": [
+      [],
+      [],
+      []
+    ],
+    "flaky_tests": {},
+    "average_execution_time": 0.04733753204345703
+  },
+  "n=1, threads=1, dist=no": {
+    "repetition_times": [
+      0.02738499641418457,
+      0.026684045791625977,
+      0.028527498245239258
+    ],
+    "failures_per_repetition": [
+      [],
+      [],
+      []
+    ],
+    "flaky_tests": {},
+    "average_execution_time": 0.027532180150349934
+  },
+  "n=1, threads=auto, dist=load": {
+    "repetition_times": [
+      0.02517414093017578,
+      0.031044721603393555,
+      0.028317928314208984
+    ],
+    "failures_per_repetition": [
+      [],
+      [],
+      []
+    ],
+    "flaky_tests": {},
+    "average_execution_time": 0.028178930282592773
+  },
+  "n=1, threads=auto, dist=no": {
+    "repetition_times": [
+      0.031527042388916016,
+      0.038620948791503906,
+      0.02488565444946289
+    ],
+    "failures_per_repetition": [
+      [],
+      [],
+      []
+    ],
+    "flaky_tests": {},
+    "average_execution_time": 0.0316778818766276
+  }
+}
